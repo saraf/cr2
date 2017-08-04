@@ -1,0 +1,24 @@
+curl -X GET -H "Content-Type:application/json"  -d '{"objects":[{"field":"count","val":9960,"time":1501495070000},{"field":"autoErrorCode","val":"2A","time":1501495070000},{"field":"manualErrorCode","val":"0800","time":1501495070000},{"field":"powerOnTimestamp","val":1500986454000,"time":1501495070000},{"field":"recordTimestamp","val":1501495070000,"time":1501495070000}]}' http://localhost:9000/api/tasks
+
+curl -X POST -H "Content-Type:application/json"  -d '{"github_id": "abcdef", "task_summary": "abcdef", "task_description": "abcdef", "summary_word_for_subtask1": "abcdef", "summary_word_for_subtask2": "abcdef", "is_commercial": "abcdef", "task_status": "abcdef", "assigned_to": "abcdef", "broken_down_by": "abcdef", "parent_task_id": "abcdef", "child_task_ids": "abcdef", "review_comments": "abcdef", "codebase_reuse_SPOC_comments": "abcdef"}' http://localhost:9000/api/tasks
+
+{"github_id": "abcdef", "task_summary": "abcdef", "task_description  ": "abcdef", "summary_word_for_subtask1": "abcdef", "summary_word_for_subtask2": "abcdef", "is_commercial": "abcdef", "status": "abcdef", "assigned_to": "abcdef", "broken_down_by": "abcdef", "parent_task_id": "abcdef", "child_task_ids": "abcdef", "review_comments": "abcdef", "codebase_reuse_SPOC_comments": "abcdef"}
+
+
+
+
+"id": "abcdef",
+"github_id": "abcdef",
+"task_summary": "abcdef",
+"task_description  ": "abcdef",
+"summary_word_for_subtask1": "abcdef",
+"summary_word_for_subtask2": "abcdef",
+"is_commercial": "abcdef",
+"status": "abcdef",
+"assigned_to": "abcdef",
+"broken_down_by": "abcdef",
+"parent_task_id": "abcdef",
+"child_task_ids": "abcdef",
+"review_comments": "abcdef",
+"codebase_reuse_SPOC_comments": "abcdef",
+
