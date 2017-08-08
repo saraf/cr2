@@ -25,13 +25,12 @@ for (var e in events) {
 }
 
 function emitEvent(event) {
-  return function (doc, options, done) {
-
+  return function(doc, options, done) {
+    
     TaskEvents.emit(event + ':' + doc.id, doc);
     TaskEvents.emit(event, doc);
     done(null);
-  };
+  }
 }
 
 module.exports = TaskEvents;
-//# sourceMappingURL=task.events.js.map

@@ -25,13 +25,12 @@ for (var e in events) {
 }
 
 function emitEvent(event) {
-  return function (doc, options, done) {
-
+  return function(doc, options, done) {
+    
     ThingEvents.emit(event + ':' + doc.id, doc);
     ThingEvents.emit(event, doc);
     done(null);
-  };
+  }
 }
 
 module.exports = ThingEvents;
-//# sourceMappingURL=thing.events.js.map

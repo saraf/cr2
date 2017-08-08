@@ -1,16 +1,16 @@
 'use strict';
 
-module.exports = function (sequelize, DataTypes) {
+module.exports = function(sequelize, DataTypes) {
   return sequelize.define('Task', {
     id: {
-      type: DataTypes.INTEGER,
+      type:  DataTypes.INTEGER ,
       allowNull: false,
       primaryKey: true,
-      autoIncrement: true
+      autoIncrement: true 
     },
     github_id: DataTypes.TEXT,
     task_summary: DataTypes.TEXT,
-    task_description: DataTypes.TEXT,
+    task_description : DataTypes.TEXT, 
     summary_word_for_subtask1: DataTypes.TEXT,
     summary_word_for_subtask2: DataTypes.TEXT,
     is_commercial: DataTypes.TEXT,
@@ -20,14 +20,13 @@ module.exports = function (sequelize, DataTypes) {
     parent_task_id: DataTypes.TEXT,
     child_task_ids: DataTypes.TEXT,
     review_comments: DataTypes.TEXT,
-    codebase_reuse_SPOC_comments: DataTypes.TEXT
-  }, {
-    timestamps: true,
+    codebase_reuse_SPOC_comments: DataTypes.TEXT,
+  },{
+    timestamps: true, 
     paranoid: true,
     underscored: true,
-    freezeTableName: true,
-    tableName: 'tasks'
-
+    freezeTableName:true,
+    tableName:'tasks'
+    
   });
 };
-//# sourceMappingURL=task.model.js.map

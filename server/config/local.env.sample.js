@@ -6,10 +6,9 @@
 // You will need to set these on the server you deploy to.
 
 module.exports = {
-  DOMAIN: 'http://localhost:9000',
-  SESSION_SECRET: 'cr2-secret',
+  DOMAIN:           'http://localhost:9000',
+  SESSION_SECRET:   'cr2-secret',
 
   // Control debug level for modules using visionmedia/debug
   DEBUG: ''
 };
-//# sourceMappingURL=local.env.sample.js.map

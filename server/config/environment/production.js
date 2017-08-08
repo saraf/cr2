@@ -4,14 +4,18 @@
 // =================================
 module.exports = {
   // Server IP
-  ip: process.env.OPENSHIFT_NODEJS_IP || process.env.IP || undefined,
+  ip:     process.env.OPENSHIFT_NODEJS_IP ||
+          process.env.IP ||
+          undefined,
 
   // Server port
-  port: process.env.OPENSHIFT_NODEJS_PORT || process.env.PORT || 8080,
+  port:   process.env.OPENSHIFT_NODEJS_PORT ||
+          process.env.PORT ||
+          8080,
 
   sequelize: {
     uri:  'postgres://'+ process.env.OPENSHIFT_POSTGRESQL_DB_USERNAME + 
-          ':' + process.env.OPENSHIFT_POSTGRESQL_DB_PASSWORD + '@' + process.env.OPENSHIFT_POSTGRESQL_DB_HOST+':' + process.env.OPENSHIFT_POSTGRESQL_DB_PORT + '/cr2', 
+          ':' + process.env.OPENSHIFT_POSTGRESQL_DB_PASSWORD + '@' + process.env.OPENSHIFT_POSTGRESQL_DB_HOST+':' + process.env.OPENSHIFT_POSTGRESQL_DB_PORT + '/crowdian', 
     options: {
       logging: false,
       dialect: 'postgres',
@@ -21,4 +25,3 @@ module.exports = {
     }
   }
 };
-//# sourceMappingURL=production.js.map

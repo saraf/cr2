@@ -20,4 +20,3 @@ module.exports = {
   seedDB: true
 
 };
-//# sourceMappingURL=development.js.map
