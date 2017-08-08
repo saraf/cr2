@@ -281,9 +281,13 @@ module.exports = function (grunt) {
       dist: {
         files: [
         { src: 'package.json', dest: 'dist/package.json'},
+        { src: 'package-lock.json', dest: 'dist/package-lock.json'},
         {expand: true, src: 'client/**', dest: 'dist/'},
        ] 
       }
+    },
+    openshift: {
+
     },
   });
 

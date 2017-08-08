@@ -18,6 +18,7 @@ This project was generated with the [Express API Generator](https://github.com/i
 ## Build & development
 
 Run `grunt build` for building and `grunt serve` for preview.
+Run grunt buildcontrol:openshift for pushing to openshift.
 
 ## Testing
 
