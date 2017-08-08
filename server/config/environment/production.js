@@ -15,7 +15,7 @@ module.exports = {
 
   sequelize: {
     uri:  'postgres://'+ process.env.OPENSHIFT_POSTGRESQL_DB_USERNAME + 
-          ':' + process.env.OPENSHIFT_POSTGRESQL_DB_PASSWORD + '@' + process.env.OPENSHIFT_POSTGRESQL_DB_HOST+':' + process.env.OPENSHIFT_POSTGRESQL_DB_PORT + '/crowdian', 
+          ':' + process.env.OPENSHIFT_POSTGRESQL_DB_PASSWORD + '@' + process.env.OPENSHIFT_POSTGRESQL_DB_HOST+':' + process.env.OPENSHIFT_POSTGRESQL_DB_PORT + '/cr2', 
     options: {
       logging: false,
       dialect: 'postgres',
